@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Calismasi</title>
+    <link rel="stylesheet" href="/audi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Merienda:wght@700&display=swap"
+        rel="stylesheet">
+    <script>
+        function goster() {
+            document.getElementById('a3').style.visibility = 'invisible';
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <header id="header">
+        <H1>ARABALAR LİSTESİ</H1>
+    </header>
+    <nav id="navbar ">
+        <div id="button">
+            <button type="button" class="bas"><a href="/flex.html">Anasayfa</a></button>
+            <button type="button" class="bas"><a href="/audi.html">AUDİ</a></button>
+            <button type="button" class="bas"><a href="/bmw.html">BMW</a></button>
+            <button type="button" class="bas"><a href="/mercedes.html">Mercedes</a></button>
+            <button type="button" class="bas"><a href="/porshe.html">Porshe</a></button>
+        </div>
+    </nav>
+    <div id="flex">
+
+        <div class="marka">
+            <h2 id="a3" onclick="goster">Audi A3</h2>
+            <img src="/audi-a3.png" alt="">
+        </div>
+        <div class="marka">
+            <h2 id="a5">Audi A5</h2>
+            <img src="/AUDI-A5-SPORTBACK.jpg" alt="">
+        </div>
+        <div class="marka">
+            <h2 id="a6"></h2>
+            <img src="/A6-2021-.jpg" alt="">
+        </div>
+    </div>
+    <div id="bilgiler">
+        <div class="bilgi">
+            <p>
+            <h2>Audi A3</h2>
+            <ul>
+                <li>Silindir Hacmi = 1488cc</li>
+                <li>Beygir Gücü = 150 HP</li>
+                <li>Maksimum Tork = 250 Nm</li>
+                <li>Vites Tipi = 7 İleri Otomatik</li>
+                <li>Yakıt Türü = Benzin</li>
+                <li>Maksimum Hız = 232 km/s</li>
+            </ul>
+            </p>
+        </div>
+        <div class="bilgi">
+            <p>
+            <h2>Audi A5</h2>
+            <ul>
+                <li>Silindir Hacmi = 1984cc</li>
+                <li>Beygir Gücü = 245 HP</li>
+                <li>Maksimum Tork = 370 Nm</li>
+                <li>Vites Tipi = 7 İleri Otomatik</li>
+                <li>Yakıt Türü = Benzin</li>
+                <li>Maksimum Hız = 250 km/s</li>
+            </ul>
+            </p>
+        </div>
+        <div class="bilgi">
+            <p>
+            <h2>Audi A6</h2>
+            <ul>
+                <li>Silindir Hacmi = 2967cc</li>
+                <li>Beygir Gücü = 272 HP</li>
+                <li>Maksimum Tork = 580 Nm</li>
+                <li>Vites Tipi = 7 İleri Otomatik</li>
+                <li>Yakıt Türü = Dizel</li>
+                <li>Maksimum Hız = 250 km/s</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
