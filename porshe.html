@@ -11,6 +11,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Merienda:wght@700&display=swap"
         rel="stylesheet">
+    <script>
+        function gosterpan() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('pan').style.display = 'block';
+            document.getElementById('tay').style.display = 'none';
+            document.getElementById('dok').style.display = 'none';
+
+        }
+        function gostertay() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('pan').style.display = 'none';
+            document.getElementById('tay').style.display = 'block';
+            document.getElementById('dok').style.display = 'none';
+
+        }
+        function gosterdok() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('pan').style.display = 'none';
+            document.getElementById('tay').style.display = 'none';
+            document.getElementById('dok').style.display = 'block';
+
+        }
+    </script>
 
 </head>
 
@@ -31,22 +54,22 @@
 
 
         <div class="marka">
-            <h2>Porshe Panamera</h2>
+            <h2 onclick="gosterpan()">Porshe Panamera</h2>
             <img src="/panamera.1.jpg" alt="">
         </div>
         <div class="marka">
-            <h2>Porshe Taycan</h2>
+            <h2 onclick="gostertay()">Porshe Taycan</h2>
             <img src="2021-porsche-taycan-cross-turismo.jpg" alt="">
         </div>
         <div class="marka">
-            <h2>Porshe 911</h2>
+            <h2 onclick="gosterdok()">Porshe 911</h2>
             <img src="/911.jpg" alt="">
         </div>
 
 
     </div>
     <div id="bilgiler">
-        <div class="bilgi">
+        <div class="bilgi" id="pan">
             <p>
             <h2>Porshe Panamera</h2>
             <ul>
@@ -59,7 +82,7 @@
             </ul>
             </p>
         </div>
-        <div class="bilgi">
+        <div class="bilgi" id="tay">
             <p>
             <h2>Porshe Taycan</h2>
             <ul>
@@ -72,7 +95,7 @@
             </ul>
             </p>
         </div>
-        <div class="bilgi">
+        <div class="bilgi" id="dok">
             <p>
             <h2>Porshe 911</h2>
             <ul>

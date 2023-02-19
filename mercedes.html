@@ -11,6 +11,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Merienda:wght@700&display=swap"
         rel="stylesheet">
+    <script>
+        function gosterc() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('c').style.display = 'block';
+            document.getElementById('cla').style.display = 'none';
+            document.getElementById('cls').style.display = 'none';
+
+        }
+        function gostercla() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('c').style.display = 'none';
+            document.getElementById('cla').style.display = 'block';
+            document.getElementById('cls').style.display = 'none';
+
+        }
+        function gostercls() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('c').style.display = 'none';
+            document.getElementById('cla').style.display = 'none';
+            document.getElementById('cls').style.display = 'block';
+
+        }
+    </script>
 
 </head>
 
@@ -31,14 +54,14 @@
 
 
         <div class="marka">
-            <h2>Mercedes C Serisi</h2>
+            <h2 onclick="gosterc()">Mercedes C Serisi</h2>
             <img src="/2021-mercedes-c-serisi-1-2.jpeg" alt="">
         </div>
-        <div class="marka">
+        <div onclick="gostercla()" class="marka">
             <h2>Mercedes CLA</h2>
             <img src="/nuova-mercedes-cla.jpg" alt="">
         </div>
-        <div class="marka">
+        <div onclick="gostercls()" class="marka">
             <h2>Mercedes CLS</h2>
             <img src="/Mercedes-Benz-CLS_01_CLS-300-d-4MATIC.jpg" alt="">
         </div>
@@ -47,7 +70,7 @@
 
     </div>
     <div id="bilgiler">
-        <div class="bilgi">
+        <div class="bilgi" id="c">
             <p>
             <h2>Mercedes C Serisi</h2>
             <ul>
@@ -60,7 +83,7 @@
             </ul>
             </p>
         </div>
-        <div class="bilgi">
+        <div class="bilgi" id="cla">
             <p>
             <h2>Mercedes CLA Serisi</h2>
             <ul>
@@ -73,7 +96,7 @@
             </ul>
             </p>
         </div>
-        <div class="bilgi">
+        <div class="bilgi" id="cls">
             <p>
             <h2>Mercedes CLS Serisi</h2>
             <ul>

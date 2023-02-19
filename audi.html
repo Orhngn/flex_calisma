@@ -12,11 +12,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Merienda:wght@700&display=swap"
         rel="stylesheet">
     <script>
-        function goster() {
-            document.getElementById('a3').style.visibility = 'invisible';
+        function gostera3() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('a3').style.display = 'block';
+            document.getElementById('a5').style.display = 'none';
+            document.getElementById('a6').style.display = 'none';
+
+        }
+        function gostera5() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('a5').style.display = 'block';
+            document.getElementById('a3').style.display = 'none';
+            document.getElementById('a6').style.display = 'none';
+
+        }
+        function gostera6() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('a6').style.display = 'block';
+            document.getElementById('a5').style.display = 'none';
+            document.getElementById('a3').style.display = 'none';
 
         }
     </script>
+
 
 </head>
 
@@ -36,20 +54,20 @@
     <div id="flex">
 
         <div class="marka">
-            <h2 id="a3" onclick="goster">Audi A3</h2>
+            <h2 onclick="gostera3()">Audi A3</h2>
             <img src="/audi-a3.png" alt="">
         </div>
         <div class="marka">
-            <h2 id="a5">Audi A5</h2>
+            <h2 onclick="gostera5()">Audi A5</h2>
             <img src="/AUDI-A5-SPORTBACK.jpg" alt="">
         </div>
         <div class="marka">
-            <h2 id="a6"></h2>
+            <h2 onclick="gostera6()">Audi A6</h2>
             <img src="/A6-2021-.jpg" alt="">
         </div>
     </div>
     <div id="bilgiler">
-        <div class="bilgi">
+        <div class="bilgi " id="a3">
             <p>
             <h2>Audi A3</h2>
             <ul>
@@ -62,7 +80,7 @@
             </ul>
             </p>
         </div>
-        <div class="bilgi">
+        <div class="bilgi " id="a5">
             <p>
             <h2>Audi A5</h2>
             <ul>
@@ -75,7 +93,7 @@
             </ul>
             </p>
         </div>
-        <div class="bilgi">
+        <div class="bilgi " id="a6">
             <p>
             <h2>Audi A6</h2>
             <ul>

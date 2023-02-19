@@ -11,7 +11,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Merienda:wght@700&display=swap"
         rel="stylesheet">
+    <script>
+        function gosters5() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('s5').style.display = 'block';
+            document.getElementById('s7').style.display = 'none';
+            document.getElementById('x7').style.display = 'none';
 
+        }
+        function gosters7() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('s5').style.display = 'none';
+            document.getElementById('s7').style.display = 'block';
+            document.getElementById('x7').style.display = 'none';
+
+        }
+        function gosterx7() {
+            document.getElementById('bilgiler').style.visibility = 'visible';
+            document.getElementById('s5').style.display = 'none';
+            document.getElementById('s7').style.display = 'none';
+            document.getElementById('x7').style.display = 'block';
+
+        }
+    </script>
 </head>
 
 <body>
@@ -31,15 +53,15 @@
 
 
         <div class="marka">
-            <h2>BMW 5 Serisi</h2>
+            <h2 onclick="gosters5()">BMW 5 Serisi</h2>
             <img src="/2021-bmw-5-serisi-makyajlandi.jpg" alt="">
         </div>
         <div class="marka">
-            <h2>BMW 7 Serisi</h2>
+            <h2 onclick="gosters7()">BMW 7 Serisi</h2>
             <img src="/2023-bmw-7-series-renderings.jpg" alt="">
         </div>
         <div class="marka">
-            <h2>BMW X7</h2>
+            <h2 onclick="gosterx7()">BMW X7</h2>
             <img src="/bmw-x-series-x7-cp-exterior-highlights-desktop.jpg" alt="">
         </div>
 
@@ -47,7 +69,7 @@
 
     </div>
     <div id="bilgiler">
-        <div class="bilgi">
+        <div class="bilgi" id="s5">
             <p>
             <h2>BMW 5 Serisi</h2>
             <ul>
@@ -60,7 +82,7 @@
             </ul>
             </p>
         </div>
-        <div class="bilgi">
+        <div class="bilgi" id="s7">
             <p>
             <h2>BMW 7 Serisi</h2>
             <ul>
@@ -73,7 +95,7 @@
             </ul>
             </p>
         </div>
-        <div class="bilgi">
+        <div class="bilgi" id="x7">
             <p>
             <h2>BMW X7</h2>
             <ul>
